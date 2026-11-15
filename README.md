@@ -1,11 +1,11 @@
 <div align="center">
+  <img src="./bento_hero.svg" width="100%" alt="Ishan Gupta - Systems Architect" />
 
-# Ishan Gupta
+  <br/><br/>
 
-**Systems Builder & Full-Stack Engineer**  
-Specializing in Enterprise Cybersecurity, Multimodal AI Systems, and Distributed Architectures.
-
-[LinkedIn](https://www.linkedin.com/in/ishan-gupta-976192419) &nbsp;•&nbsp; [Email](mailto:ishan.gupta@example.com) &nbsp;•&nbsp; [GitHub](https://github.com/ishangupta1412)
+  [**LinkedIn**](https://www.linkedin.com/in/ishan-gupta-976192419) &nbsp;•&nbsp; 
+  [**Email**](mailto:ishan.gupta@example.com) &nbsp;•&nbsp; 
+  [**Verified Repositories**](https://github.com/ishangupta1412?tab=repositories)
 
 </div>
 
@@ -15,7 +15,7 @@ Specializing in Enterprise Cybersecurity, Multimodal AI Systems, and Distributed
 
 ### Focus & Philosophy
 
-I build resilient, mathematically grounded software. My work centers on high-complexity challenges: detecting distributed adversary behavior in enterprise authentication telemetry, deploying multimodal AI for statutory compliance, and engineering accessible, high-performance web systems.
+I build resilient, mathematically grounded software. My work centers on high-complexity engineering challenges: detecting distributed adversary behavior in enterprise authentication telemetry, deploying multimodal AI for statutory compliance, and engineering accessible, high-performance web systems.
 
 - **Enterprise Defense**: Graph algorithms for low-and-slow attack correlation and tamper-evident audit ledgers.
 - **Multimodal AI & RAG**: Semantic vector retrieval and vision forensics grounded in statutory standards.

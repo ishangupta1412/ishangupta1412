@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="240">
+  <defs>
+    <!-- Background Dark Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="100%" stop-color="#04060A" />
+    </linearGradient>
+
+    <!-- Subtle Accent Linear Gradient -->
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+
+    <!-- Hairline Grid Pattern -->
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1E293B" opacity="0.6" />
+    </pattern>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseLive {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+    @keyframes subtleFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    .pulse-dot {
+      animation: pulseLive 2.5s ease-in-out infinite;
+      transform-origin: 40px 40px;
+    }
+    .hover-card {
+      transition: all 0.3s ease;
+    }
+    .font-sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+    }
+    .font-mono {
+      font-family: 'Fira Code', 'SF Mono', 'Courier New', monospace;
+    }
+  </style>
+
+  <!-- Base Canvas -->
+  <rect width="900" height="240" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.2" />
+  <rect width="900" height="240" rx="14" fill="url(#dotGrid)" />
+
+  <!-- LEFT BENTO BLOCK: Identity & Philosophy (width ~460) -->
+  <g transform="translate(36, 32)">
+    <!-- Live Status Eyebrow -->
+    <g transform="translate(0, 0)">
+      <circle class="pulse-dot" cx="6" cy="6" r="4.5" fill="#10B981" filter="url(#subtleGlow)" />
+      <text x="20" y="10" fill="#94A3B8" class="font-mono" font-size="11" font-weight="600" letter-spacing="0.8">
+        SYSTEMS ARCHITECT &amp; SECURITY BUILDER
+      </text>
+    </g>
+
+    <!-- Name Heading -->
+    <text x="0" y="54" fill="#F8FAFC" class="font-sans" font-size="34" font-weight="800" letter-spacing="-0.8">
+      Ishan Gupta
+    </text>
+
+    <!-- Subtitle / Mission -->
+    <text x="0" y="86" fill="#94A3B8" class="font-sans" font-size="14" font-weight="400">
+      Engineering resilient software grounded in graph theory,
+    </text>
+    <text x="0" y="106" fill="#94A3B8" class="font-sans" font-size="14" font-weight="400">
+      tamper-evident telemetry, and multimodal AI systems.
+    </text>
+
+    <!-- Quick Meta Pills -->
+    <g transform="translate(0, 134)">
+      <rect x="0" y="0" width="130" height="26" rx="6" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="12" y="17" fill="#CBD5E1" class="font-mono" font-size="10.5" font-weight="500">First-Year Eng</text>
+
+      <rect x="140" y="0" width="140" height="26" rx="6" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="152" y="17" fill="#CBD5E1" class="font-mono" font-size="10.5" font-weight="500">MS Innovate '26</text>
+
+      <rect x="290" y="0" width="105" height="26" rx="6" fill="#0F172A" stroke="#334155" stroke-width="0.8" />
+      <text x="302" y="17" fill="#CBD5E1" class="font-mono" font-size="10.5" font-weight="500">SIH '26 Final</text>
+    </g>
+  </g>
+
+  <!-- VERTICAL DIVIDER -->
+  <line x1="490" y1="24" x2="490" y2="216" stroke="#1E293B" stroke-width="1" />
+
+  <!-- RIGHT BENTO BLOCK: Flagship Systems Telemetry (width ~370) -->
+  <g transform="translate(520, 30)">
+    
+    <!-- Mini Card 1: Quorum -->
+    <g transform="translate(0, 0)">
+      <rect width="344" height="82" rx="10" fill="#0B1120" stroke="#1E293B" stroke-width="1" />
+      
+      <!-- Icon & Title -->
+      <text x="16" y="26" fill="#38BDF8" class="font-sans" font-size="14" font-weight="700">🛡️ Quorum</text>
+      <text x="100" y="25" fill="#64748B" class="font-mono" font-size="10">• SOC Detection Layer</text>
+
+      <!-- Description -->
+      <text x="16" y="47" fill="#94A3B8" class="font-sans" font-size="11.5">
+        Bipartite Union-Find graph clustering over VPN spray attacks.
+      </text>
+
+      <!-- Badges -->
+      <text x="16" y="68" fill="#64748B" class="font-mono" font-size="9.5">
+        Next.js 14 • Sentinel ARM • SHA-256 Ledger • D3.js
+      </text>
+    </g>
+
+    <!-- Mini Card 2: BIS Saathi -->
+    <g transform="translate(0, 96)">
+      <rect width="344" height="82" rx="10" fill="#0B1120" stroke="#1E293B" stroke-width="1" />
+      
+      <!-- Icon & Title -->
+      <text x="16" y="26" fill="#34D399" class="font-sans" font-size="14" font-weight="700">🇮🇳 BIS Saathi</text>
+      <text x="120" y="25" fill="#64748B" class="font-mono" font-size="10">• GovTech AI Platform</text>
+
+      <!-- Description -->
+      <text x="16" y="47" fill="#94A3B8" class="font-sans" font-size="11.5">
+        Gemini 3.8 Vision mark forensics &amp; pgvector statutory RAG.
+      </text>
+
+      <!-- Badges -->
+      <text x="16" y="68" fill="#64748B" class="font-mono" font-size="9.5">
+        Next.js 16 • React 19 • Gemini 3.8 • GIGW 3.0 AA
+      </text>
+    </g>
+
+  </g>
+</svg>
