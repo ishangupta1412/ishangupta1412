@@ -80,18 +80,18 @@ def generate_whatsapp_svg():
       .wa-mic-bg {{ fill: #00a884; }}
     }}
 
-    /* Subtle Pop-in Animation */
-    .msg-fade-1 {{ animation: msgIn 0.4s ease-out 0.2s both; }}
-    .msg-fade-2 {{ animation: msgIn 0.4s ease-out 0.6s both; }}
-    .msg-fade-3 {{ animation: msgIn 0.4s ease-out 1.0s both; }}
-    .msg-fade-4 {{ animation: msgIn 0.4s ease-out 1.4s both; }}
-    .msg-fade-5 {{ animation: msgIn 0.4s ease-out 1.8s both; }}
-    .msg-fade-6 {{ animation: msgIn 0.4s ease-out 2.2s both; }}
+    /* Clean, rock-solid visibility without transform conflicts */
+    .msg-fade-1 { animation: msgIn 0.3s ease-out 0.1s both; }
+    .msg-fade-2 { animation: msgIn 0.3s ease-out 0.4s both; }
+    .msg-fade-3 { animation: msgIn 0.3s ease-out 0.7s both; }
+    .msg-fade-4 { animation: msgIn 0.3s ease-out 1.0s both; }
+    .msg-fade-5 { animation: msgIn 0.3s ease-out 1.3s both; }
+    .msg-fade-6 { animation: msgIn 0.3s ease-out 1.6s both; }
 
-    @keyframes msgIn {{
-      0% {{ opacity: 0; transform: translateY(6px); }}
-      100% {{ opacity: 1; transform: translateY(0); }}
-    }}
+    @keyframes msgIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
   </style>
 
   <g clip-path="url(#containerClip)">

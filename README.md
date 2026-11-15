@@ -1,7 +1,7 @@
 <div align="center">
 
-  <!-- WhatsApp Chat Animation UI -->
-  <img src="./assets/chat_animation.svg" width="600" alt="Ishan Gupta - WhatsApp Chat" />
+  <!-- Minimalist Intro Chat Pop-up Bubbles -->
+  <img src="./assets/chat_animation.svg" width="650" alt="Ishan Gupta - Intro" />
 
   <br/><br/>
 

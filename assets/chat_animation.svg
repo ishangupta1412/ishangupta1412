@@ -1,235 +1,104 @@
-<svg width="680" height="540" viewBox="0 0 680 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ishan Gupta - WhatsApp Chat">
-  <defs>
-    <clipPath id="containerClip">
-      <rect width="680" height="540" rx="12" />
-    </clipPath>
-    <clipPath id="avatarClip">
-      <circle cx="48" cy="30" r="18" />
-    </clipPath>
-  </defs>
-
+<svg width="650" height="380" viewBox="0 0 650 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ishan Gupta - Introduction">
   <style>
-    /* WhatsApp Typography */
-    .font-wa {
+    .font-ui {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      letter-spacing: -0.01em;
+    }
+    .bubble-bg {
+      fill: #e9e9eb;
+      transition: fill 0.3s;
+    }
+    .bubble-text {
+      fill: #1c1c1e;
+      font-weight: 450;
     }
 
-    /* Light Theme (Default WhatsApp) */
-    .wa-bg { fill: #efeae2; }
-    .wa-header-bg { fill: #008069; }
-    .wa-header-title { fill: #ffffff; font-weight: 600; font-size: 15px; }
-    .wa-header-sub { fill: #d1f4cc; font-size: 11px; }
-    .wa-header-icon { fill: #ffffff; }
-    .wa-date-pill-bg { fill: #ffffff; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.08)); }
-    .wa-date-pill-text { fill: #54656f; font-size: 11px; font-weight: 500; }
-    
-    .wa-incoming-bg { fill: #ffffff; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.08)); }
-    .wa-incoming-text { fill: #111b21; font-size: 13.5px; }
-    
-    .wa-outgoing-bg { fill: #d9fdd3; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.08)); }
-    .wa-outgoing-text { fill: #111b21; font-size: 13.5px; }
-
-    .wa-time-text { fill: #667781; font-size: 10px; }
-    .wa-ticks { fill: #53bdeb; }
-    .wa-border { stroke: #d1d7db; stroke-width: 1; }
-
-    .wa-input-bg { fill: #f0f2f5; }
-    .wa-input-box { fill: #ffffff; rx: 18; }
-    .wa-input-text { fill: #8696a0; font-size: 13px; }
-    .wa-mic-bg { fill: #00a884; }
-
-    /* Dark Theme (WhatsApp Dark Mode) */
     @media (prefers-color-scheme: dark) {
-      .wa-bg { fill: #0b141a; }
-      .wa-header-bg { fill: #202c33; }
-      .wa-header-title { fill: #e9edef; }
-      .wa-header-sub { fill: #00a884; }
-      .wa-header-icon { fill: #aebac1; }
-      .wa-date-pill-bg { fill: #182229; }
-      .wa-date-pill-text { fill: #8696a0; }
-
-      .wa-incoming-bg { fill: #202c33; }
-      .wa-incoming-text { fill: #e9edef; }
-
-      .wa-outgoing-bg { fill: #005c4b; }
-      .wa-outgoing-text { fill: #e9edef; }
-
-      .wa-time-text { fill: #8696a0; }
-      .wa-ticks { fill: #53bdeb; }
-      .wa-border { stroke: #222e35; }
-
-      .wa-input-bg { fill: #202c33; }
-      .wa-input-box { fill: #2a3942; }
-      .wa-input-text { fill: #8696a0; }
-      .wa-mic-bg { fill: #00a884; }
+      .bubble-bg {
+        fill: #2c2c2e;
+      }
+      .bubble-text {
+        fill: #f2f2f7;
+      }
     }
 
-    /* Subtle Pop-in Animation */
-    .msg-fade-1 { animation: msgIn 0.4s ease-out 0.2s both; }
-    .msg-fade-2 { animation: msgIn 0.4s ease-out 0.6s both; }
-    .msg-fade-3 { animation: msgIn 0.4s ease-out 1.0s both; }
-    .msg-fade-4 { animation: msgIn 0.4s ease-out 1.4s both; }
-    .msg-fade-5 { animation: msgIn 0.4s ease-out 1.8s both; }
-    .msg-fade-6 { animation: msgIn 0.4s ease-out 2.2s both; }
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
-    @keyframes msgIn {
-      0% { opacity: 0; transform: translateY(6px); }
-      100% { opacity: 1; transform: translateY(0); }
+    .bubble-1 {
+      opacity: 0;
+      animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    }
+
+    .bubble-2 {
+      opacity: 0;
+      animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+    }
+
+    .bubble-3 {
+      opacity: 0;
+      animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 1.0s forwards;
+    }
+
+    .bubble-4 {
+      opacity: 0;
+      animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 1.4s forwards;
+    }
+
+    .bubble-5 {
+      opacity: 0;
+      animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 1.8s forwards;
+    }
+
+    .bubble-6 {
+      opacity: 0;
+      animation: popIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) 2.2s forwards;
     }
   </style>
 
-  <g clip-path="url(#containerClip)">
-    <!-- Chat Wallpaper Background -->
-    <rect width="680" height="540" class="wa-bg" />
+  <!-- Message Bubbles Stack -->
+  <g>
 
-    <!-- Subtle Wallpaper Pattern (Doodle Dots / Crosses) -->
-    <g opacity="0.04" stroke="#ffffff" stroke-width="1.2">
-      <circle cx="80" cy="140" r="12" fill="none" />
-      <path d="M 220 180 L 230 190 M 230 180 L 220 190" />
-      <rect x="520" y="240" width="16" height="16" rx="4" fill="none" />
-      <circle cx="340" cy="380" r="10" fill="none" />
-      <path d="M 120 420 L 130 430 M 130 420 L 120 430" />
-      <circle cx="580" cy="120" r="14" fill="none" />
+    <!-- Message 1 -->
+    <g class="bubble-1">
+      <rect x="20" y="15" width="220" height="44" rx="18" class="bubble-bg" />
+      <text x="36" y="42" class="bubble-text font-ui" font-size="15.5">Hey there! I'm Ishan 👋</text>
     </g>
 
-    <!-- Top WhatsApp Header Bar -->
-    <rect width="680" height="60" class="wa-header-bg" />
-
-    <!-- Back Arrow icon -->
-    <path d="M 18 30 L 26 23 M 18 30 L 26 37 M 18 30 L 30 30" stroke="#ffffff" stroke-width="2" stroke-linecap="round" class="wa-header-icon" />
-
-    <!-- Avatar Circle -->
-    <circle cx="48" cy="30" r="18" fill="#00a884" />
-    <!-- Initials Avatar "IG" -->
-    <text x="48" y="35" text-anchor="middle" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="600" font-size="13">IG</text>
-
-    <!-- Online Status Dot -->
-    <circle cx="62" cy="42" r="4.5" fill="#25d366" stroke="#202c33" stroke-width="1.5" />
-
-    <!-- Name & Subtitle -->
-    <text x="76" y="27" class="wa-header-title font-wa">Ishan Gupta</text>
-    <text x="76" y="42" class="wa-header-sub font-wa">online</text>
-
-    <!-- Header Action Icons (Video, Call, Menu) -->
-    <!-- Video Icon -->
-    <g transform="translate(560, 20)" class="wa-header-icon">
-      <path d="M 2 4 C 2 2.9 2.9 2 4 2 L 14 2 C 15.1 2 16 2.9 16 4 L 16 16 C 16 17.1 15.1 18 14 18 L 4 18 C 2.9 18 2 17.1 2 16 Z M 16 7 L 22 3 L 22 17 L 16 13 Z" fill="currentColor" />
+    <!-- Message 2 -->
+    <g class="bubble-2">
+      <rect x="20" y="72" width="485" height="44" rx="18" class="bubble-bg" />
+      <text x="36" y="99" class="bubble-text font-ui" font-size="14.5">First-year engineering student passionate about math &amp; computing 📐⚡</text>
     </g>
 
-    <!-- Phone Call Icon -->
-    <g transform="translate(605, 20)" class="wa-header-icon">
-      <path d="M 4 2 C 2.9 2 2 2.9 2 4 C 2 13.9 10.1 22 20 22 C 21.1 22 22 21.1 22 20 L 18 14 L 14.5 16.5 C 11.5 14.5 9.5 12.5 7.5 9.5 L 10 6 Z" fill="currentColor" />
+    <!-- Message 3 -->
+    <g class="bubble-3">
+      <rect x="20" y="129" width="505" height="44" rx="18" class="bubble-bg" />
+      <text x="36" y="156" class="bubble-text font-ui" font-size="14">I love building clean software, diving into algorithms &amp; experimenting with AI 💻🚀</text>
     </g>
 
-    <!-- 3-Dots Menu -->
-    <g transform="translate(650, 20)" class="wa-header-icon">
-      <circle cx="2" cy="4" r="1.8" fill="currentColor" />
-      <circle cx="2" cy="10" r="1.8" fill="currentColor" />
-      <circle cx="2" cy="16" r="1.8" fill="currentColor" />
+    <!-- Message 4 -->
+    <g class="bubble-4">
+      <rect x="20" y="186" width="460" height="44" rx="18" class="bubble-bg" />
+      <text x="36" y="213" class="bubble-text font-ui" font-size="14.5">Always curious, learning continuously and solving hard problems 💡✨</text>
     </g>
 
-    <!-- Date Divider Pill -->
-    <g transform="translate(298, 74)">
-      <rect width="84" height="22" rx="6" class="wa-date-pill-bg" />
-      <text x="42" y="15" text-anchor="middle" class="wa-date-pill-text font-wa">TODAY</text>
+    <!-- Message 5 -->
+    <g class="bubble-5">
+      <rect x="20" y="243" width="405" height="44" rx="18" class="bubble-bg" />
+      <text x="36" y="270" class="bubble-text font-ui" font-size="14.5">You can connect with me on LinkedIn, Gmail, and X 👇</text>
     </g>
 
-    <!-- ================= MESSAGE 1 (Incoming - Visitor) ================= -->
-    <g transform="translate(24, 110)" class="msg-fade-1">
-      <!-- Tail -->
-      <path d="M -6 0 L 8 0 L 8 14 Z" class="wa-incoming-bg" />
-      <!-- Bubble Rect -->
-      <rect width="280" height="42" rx="8" class="wa-incoming-bg" />
-      <text x="14" y="23" class="wa-incoming-text font-wa">Hey Ishan! Tell me about yourself 👋</text>
-      <text x="246" y="34" class="wa-time-text font-wa">12:00 AM</text>
+    <!-- Message 6 -->
+    <g class="bubble-6">
+      <rect x="20" y="300" width="225" height="44" rx="18" class="bubble-bg" />
+      <text x="36" y="327" class="bubble-text font-ui" font-size="15.5">Have a great day ahead! ✌️</text>
     </g>
-
-    <!-- ================= MESSAGE 2 (Outgoing - Ishan) ================= -->
-    <g transform="translate(186, 162)" class="msg-fade-2">
-      <!-- Bubble Rect -->
-      <rect width="470" height="46" rx="8" class="wa-outgoing-bg" />
-      <!-- Tail -->
-      <path d="M 470 0 L 462 0 L 462 14 Z" class="wa-outgoing-bg" />
-      <text x="14" y="24" class="wa-outgoing-text font-wa">Hey! I'm a first-year engineering student in Delhi 🎓</text>
-      <text x="14" y="40" class="wa-outgoing-text font-wa">Deeply passionate about mathematics &amp; computing 📐⚡</text>
-      <text x="414" y="38" class="wa-time-text font-wa">12:01 AM</text>
-      <!-- Double Blue Ticks -->
-      <path d="M 452 32 L 454.5 35 L 459 28 M 456 32 L 458.5 35 L 463 28" stroke="#53bdeb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-    </g>
-
-    <!-- ================= MESSAGE 3 (Incoming - Visitor) ================= -->
-    <g transform="translate(24, 220)" class="msg-fade-3">
-      <!-- Tail -->
-      <path d="M -6 0 L 8 0 L 8 14 Z" class="wa-incoming-bg" />
-      <rect width="265" height="42" rx="8" class="wa-incoming-bg" />
-      <text x="14" y="23" class="wa-incoming-text font-wa">What kind of tech do you love? 💻</text>
-      <text x="230" y="34" class="wa-time-text font-wa">12:02 AM</text>
-    </g>
-
-    <!-- ================= MESSAGE 4 (Outgoing - Ishan) ================= -->
-    <g transform="translate(161, 272)" class="msg-fade-4">
-      <rect width="495" height="46" rx="8" class="wa-outgoing-bg" />
-      <path d="M 495 0 L 487 0 L 487 14 Z" class="wa-outgoing-bg" />
-      <text x="14" y="24" class="wa-outgoing-text font-wa">Building clean software, AI systems, and solving algorithms 🚀</text>
-      <text x="14" y="40" class="wa-outgoing-text font-wa">Curious mindset, coding every day and learning continuously! 💡</text>
-      <text x="439" y="38" class="wa-time-text font-wa">12:03 AM</text>
-      <path d="M 477 32 L 479.5 35 L 484 28 M 481 32 L 483.5 35 L 488 28" stroke="#53bdeb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-    </g>
-
-    <!-- ================= MESSAGE 5 (Incoming - Visitor) ================= -->
-    <g transform="translate(24, 330)" class="msg-fade-5">
-      <path d="M -6 0 L 8 0 L 8 14 Z" class="wa-incoming-bg" />
-      <rect width="295" height="42" rx="8" class="wa-incoming-bg" />
-      <text x="14" y="23" class="wa-incoming-text font-wa">Awesome! Where's best to connect? 🤝</text>
-      <text x="260" y="34" class="wa-time-text font-wa">12:04 AM</text>
-    </g>
-
-    <!-- ================= MESSAGE 6 (Outgoing - Ishan) ================= -->
-    <g transform="translate(196, 382)" class="msg-fade-6">
-      <rect width="460" height="46" rx="8" class="wa-outgoing-bg" />
-      <path d="M 460 0 L 452 0 L 452 14 Z" class="wa-outgoing-bg" />
-      <text x="14" y="24" class="wa-outgoing-text font-wa">Connect on LinkedIn or X @ishangupta1412 — DMs open! 📬</text>
-      <text x="14" y="40" class="wa-outgoing-text font-wa">Have a fantastic day! ✌️✨</text>
-      <text x="404" y="38" class="wa-time-text font-wa">12:05 AM</text>
-      <path d="M 442 32 L 444.5 35 L 449 28 M 446 32 L 448.5 35 L 453 28" stroke="#53bdeb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-    </g>
-
-    <!-- Bottom WhatsApp Input Bar -->
-    <g transform="translate(0, 478)">
-      <rect width="680" height="62" class="wa-input-bg" />
-      
-      <!-- Input Capsule -->
-      <g transform="translate(14, 10)">
-        <rect width="600" height="42" rx="21" class="wa-input-box" />
-        
-        <!-- Smiley Icon -->
-        <circle cx="22" cy="21" r="9" fill="none" stroke="#8696a0" stroke-width="1.5" />
-        <circle cx="19" cy="18" r="1.2" fill="#8696a0" />
-        <circle cx="25" cy="18" r="1.2" fill="#8696a0" />
-        <path d="M 18 23 Q 22 26 26 23" fill="none" stroke="#8696a0" stroke-width="1.5" stroke-linecap="round" />
-
-        <!-- Placeholder text -->
-        <text x="42" y="26" class="wa-input-text font-wa">Message</text>
-
-        <!-- Paperclip Attachment Icon -->
-        <g transform="translate(542, 12)">
-          <path d="M 4 10 L 10 4 C 12 2 15 2 17 4 C 19 6 19 9 17 11 L 9 19 C 7 21 4 21 2 19 C 0 17 0 14 2 12 L 10 4" fill="none" stroke="#8696a0" stroke-width="1.6" stroke-linecap="round" />
-        </g>
-      </g>
-
-      <!-- Voice Note Button (Green circle on right) -->
-      <g transform="translate(626, 10)">
-        <circle cx="21" cy="21" r="21" class="wa-mic-bg" />
-        <!-- Mic Icon -->
-        <g transform="translate(13, 11)" fill="#ffffff">
-          <rect x="5" y="3" width="6" height="10" rx="3" />
-          <path d="M 2 8 C 2 12 5 14 8 14 C 11 14 14 12 14 8" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" />
-          <line x1="8" y1="14" x2="8" y2="17" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" />
-        </g>
-      </g>
-    </g>
-
   </g>
-  <!-- Outer Card Border -->
-  <rect width="680" height="540" rx="12" fill="none" class="wa-border" />
 </svg>
