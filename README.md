@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./bento_hero.svg" width="100%" alt="Ishan Gupta - Systems Architect" />
+  <img src="./terminal_hud.svg" width="100%" alt="Ishan Gupta - Systems Telemetry" />
 
   <br/><br/>
 
