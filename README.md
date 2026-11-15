@@ -103,12 +103,12 @@
       <p><sub><code>Next.js 14</code> • <code>TypeScript</code> • <code>D3.js</code> • <code>Sentinel ARM</code> • <code>STIX 2.1</code></sub></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🇮🇳 BIS Saathi</h3>
+      <h3>🇮🇳 BIS-AI Saathi</h3>
       <p><em>Multimodal regulatory cockpit &amp; technical guidance platform. Built for <strong>Smart India Hackathon 2026 (SIH26107)</strong>.</em></p>
       <p>
         <a href="https://bis-saathi-nine.vercel.app/"><strong>Live Production</strong></a> &nbsp;|&nbsp; 
-        <a href="https://github.com/ishangupta1412/sih26107-bis-saathi"><strong>Source Code</strong></a> &nbsp;|&nbsp;
-        <a href="https://github.com/ishangupta1412/sih26107-bis-saathi/stargazers"><img src="https://img.shields.io/github/stars/ishangupta1412/sih26107-bis-saathi?style=flat&color=10b981&label=%E2%98%85%20stars" alt="BIS Saathi Stars" /></a>
+        <a href="https://github.com/ishangupta1412/BIS-AI-Saathi"><strong>Source Code</strong></a> &nbsp;|&nbsp;
+        <a href="https://github.com/ishangupta1412/BIS-AI-Saathi/stargazers"><img src="https://img.shields.io/github/stars/ishangupta1412/BIS-AI-Saathi?style=flat&color=10b981&label=%E2%98%85%20stars" alt="BIS-AI Saathi Stars" /></a>
       </p>
       <ul>
         <li><strong>Gemini 3.8 Flash Vision</strong> photo forensics for instant packaging compliance verification.</li>
