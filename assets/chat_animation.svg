@@ -1,93 +1,99 @@
-<svg width="720" height="580" viewBox="0 0 720 580" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chat with Ishan Gupta">
+<svg width="750" height="640" viewBox="0 0 750 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chat with Ishan Gupta">
   <style>
     .font-ui {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      letter-spacing: -0.01em;
+      font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI Variable", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      letter-spacing: -0.015em;
     }
     .v-bg   { fill: #0a84ff; }
-    .v-text { fill: #ffffff; }
+    .v-text { fill: #ffffff; font-weight: 500; }
     .i-bg   { fill: #e9e9eb; }
-    .i-text { fill: #1c1c1e; }
+    .i-text { fill: #1c1c1e; font-weight: 450; }
     @media (prefers-color-scheme: dark) {
       .i-bg   { fill: #2c2c2e; }
       .i-text { fill: #f2f2f7; }
     }
-    .label { font-size: 10px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+    .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
     .v-label { fill: #0a84ff; }
     .i-label { fill: #8e8e93; }
 
     @keyframes popIn {
-      0%   { opacity: 0; transform: scale(0.92) translateY(5px); }
+      0%   { opacity: 0; transform: scale(0.90) translateY(8px); }
+      60%  { opacity: 1; transform: scale(1.02) translateY(-2px); }
       100% { opacity: 1; transform: scale(1)    translateY(0); }
     }
-    .b1  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 0.3s  forwards; }
-    .b2  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 1.1s  forwards; }
-    .b3  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 2.0s  forwards; }
-    .b4  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 2.9s  forwards; }
-    .b5  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 3.8s  forwards; }
-    .b6  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 4.7s  forwards; }
-    .b7  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 5.6s  forwards; }
-    .b8  { opacity: 0; animation: popIn 0.4s cubic-bezier(0.16,1,0.3,1) 6.5s  forwards; }
+    .b1 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 0.3s  forwards; }
+    .b2 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 1.2s  forwards; }
+    .b3 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 2.1s  forwards; }
+    .b4 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 3.0s  forwards; }
+    .b5 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 3.9s  forwards; }
+    .b6 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 4.8s  forwards; }
+    .b7 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 5.7s  forwards; }
+    .b8 { opacity: 0; animation: popIn 0.45s cubic-bezier(0.16,1,0.3,1) 6.6s  forwards; }
   </style>
 
-  <!-- Bubble 1 — Visitor right -->
+  <!-- ── B1: Visitor right ── -->
   <g class="b1">
-    <text x="694" y="22" class="font-ui label v-label" text-anchor="end">Visitor</text>
-    <rect x="348" y="26" width="344" height="38" rx="16" class="v-bg"/>
-    <text x="366" y="50" class="font-ui v-text" font-size="13.5">Hey Ishan! Tell me a bit about yourself 👋</text>
+    <text x="728" y="22" class="font-ui label v-label" text-anchor="end">Visitor</text>
+    <rect x="300" y="27" width="428" height="48" rx="18" class="v-bg"/>
+    <text x="320" y="57" class="font-ui v-text" font-size="16">Hey Ishan! Tell me a bit about yourself 👋</text>
   </g>
 
-  <!-- Bubble 2 — Ishan left (2 lines) -->
+  <!-- ── B2: Ishan left (2 lines) ── -->
   <g class="b2">
-    <text x="28" y="84" class="font-ui label i-label">Ishan</text>
-    <rect x="28" y="88" width="456" height="52" rx="16" class="i-bg"/>
-    <text x="46" y="110" class="font-ui i-text" font-size="13.5">Hey! I'm a first-year engineering student</text>
-    <text x="46" y="129" class="font-ui i-text" font-size="13.5">passionate about mathematics &amp; computing 📐⚡</text>
+    <text x="28" y="92" class="font-ui label i-label">Ishan</text>
+    <rect x="28" y="97" width="460" height="66" rx="18" class="i-bg"/>
+    <text x="48" y="124" class="font-ui i-text" font-size="16">Hey! I&apos;m a first-year engineering student</text>
+    <text x="48" y="148" class="font-ui i-text" font-size="16">passionate about mathematics &amp; computing 📐⚡</text>
   </g>
 
-  <!-- Bubble 3 — Visitor right -->
+  <!-- ── B3: Visitor right ── -->
   <g class="b3">
-    <text x="694" y="162" class="font-ui label v-label" text-anchor="end">Visitor</text>
-    <rect x="334" y="166" width="358" height="38" rx="16" class="v-bg"/>
-    <text x="352" y="190" class="font-ui v-text" font-size="13.5">That's cool! What kind of stuff do you build? 💻</text>
+    <text x="728" y="182" class="font-ui label v-label" text-anchor="end">Visitor</text>
+    <rect x="254" y="187" width="474" height="48" rx="18" class="v-bg"/>
+    <text x="274" y="217" class="font-ui v-text" font-size="16">That&apos;s cool! What kind of stuff do you build? 💻</text>
   </g>
 
-  <!-- Bubble 4 — Ishan left (2 lines) -->
+  <!-- ── B4: Ishan left (2 lines) ── -->
   <g class="b4">
-    <text x="28" y="224" class="font-ui label i-label">Ishan</text>
-    <rect x="28" y="228" width="522" height="52" rx="16" class="i-bg"/>
-    <text x="46" y="250" class="font-ui i-text" font-size="13.5">I love building clean software, diving deep into</text>
-    <text x="46" y="269" class="font-ui i-text" font-size="13.5">algorithms &amp; experimenting with AI 💻🚀</text>
+    <text x="28" y="254" class="font-ui label i-label">Ishan</text>
+    <rect x="28" y="259" width="468" height="66" rx="18" class="i-bg"/>
+    <text x="48" y="286" class="font-ui i-text" font-size="16">I love building clean software, diving deep into</text>
+    <text x="48" y="310" class="font-ui i-text" font-size="16">algorithms &amp; experimenting with AI 💻🚀</text>
   </g>
 
-  <!-- Bubble 5 — Visitor right -->
+  <!-- ── B5: Visitor right ── -->
   <g class="b5">
-    <text x="694" y="302" class="font-ui label v-label" text-anchor="end">Visitor</text>
-    <rect x="472" y="306" width="220" height="38" rx="16" class="v-bg"/>
-    <text x="490" y="330" class="font-ui v-text" font-size="13.5">What drives you the most? 💡</text>
+    <text x="728" y="344" class="font-ui label v-label" text-anchor="end">Visitor</text>
+    <rect x="440" y="349" width="288" height="48" rx="18" class="v-bg"/>
+    <text x="460" y="379" class="font-ui v-text" font-size="16">What drives you the most? 💡</text>
   </g>
 
-  <!-- Bubble 6 — Ishan left (2 lines) -->
+  <!-- ── B6: Ishan left (2 lines) ── -->
   <g class="b6">
-    <text x="28" y="364" class="font-ui label i-label">Ishan</text>
-    <rect x="28" y="368" width="502" height="52" rx="16" class="i-bg"/>
-    <text x="46" y="390" class="font-ui i-text" font-size="13.5">Pure curiosity! Solving hard engineering problems,</text>
-    <text x="46" y="409" class="font-ui i-text" font-size="13.5">learning continuously &amp; shipping code every day ✨</text>
+    <text x="28" y="416" class="font-ui label i-label">Ishan</text>
+    <rect x="28" y="421" width="494" height="66" rx="18" class="i-bg"/>
+    <text x="48" y="448" class="font-ui i-text" font-size="16">Pure curiosity! Solving hard engineering problems,</text>
+    <text x="48" y="472" class="font-ui i-text" font-size="16">learning continuously &amp; shipping code every day ✨</text>
   </g>
 
-  <!-- Bubble 7 — Visitor right -->
+  <!-- ── B7: Visitor right ── -->
   <g class="b7">
-    <text x="694" y="442" class="font-ui label v-label" text-anchor="end">Visitor</text>
-    <rect x="308" y="446" width="384" height="38" rx="16" class="v-bg"/>
-    <text x="326" y="470" class="font-ui v-text" font-size="13.5">Awesome! Where's the best place to connect? 🤝</text>
+    <text x="728" y="506" class="font-ui label v-label" text-anchor="end">Visitor</text>
+    <rect x="264" y="511" width="464" height="48" rx="18" class="v-bg"/>
+    <text x="284" y="541" class="font-ui v-text" font-size="16">Awesome! Where&apos;s the best place to connect? 🤝</text>
   </g>
 
-  <!-- Bubble 8 — Ishan left (2 lines) -->
+  <!-- ── B8: Ishan left (2 lines) ── -->
   <g class="b8">
-    <text x="28" y="504" class="font-ui label i-label">Ishan</text>
-    <rect x="28" y="508" width="502" height="52" rx="16" class="i-bg"/>
-    <text x="46" y="530" class="font-ui i-text" font-size="13.5">You can connect with me on LinkedIn, Gmail &amp; X 👇</text>
-    <text x="46" y="549" class="font-ui i-text" font-size="13.5">Always happy to chat! Have a fantastic day! ✌️</text>
+    <text x="28" y="578" class="font-ui label i-label">Ishan</text>
+    <rect x="28" y="583" width="494" height="66" rx="18" class="i-bg"/>
+    <text x="48" y="610" class="font-ui i-text" font-size="16">You can connect with me on LinkedIn, Gmail &amp; X 👇</text>
+    <text x="48" y="634" class="font-ui i-text" font-size="16">Always happy to chat! Have a fantastic day! ✌️</text>
   </g>
 
 </svg>

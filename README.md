@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Minimalist Intro Chat Pop-up Bubbles -->
-  <img src="./assets/chat_animation.svg" width="650" alt="Ishan Gupta - Intro" />
+  <img src="./assets/chat_animation.svg" width="750" alt="Ishan Gupta - Intro" />
 
   <br/><br/>
 
