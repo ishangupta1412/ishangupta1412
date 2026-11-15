@@ -1,11 +1,33 @@
 <div align="center">
-  <img src="./terminal_hud.svg" width="100%" alt="Ishan Gupta - Systems Telemetry" />
+
+  <!-- Sci-Fi Pixel / Hologram Looping Avatar -->
+  <a href="https://github.com/ishangupta1412">
+    <img src="./assets/avatar_scifi_loop.gif" width="150" height="150" style="border-radius: 50%;" alt="Ishan Gupta - Sci-Fi Operative" />
+  </a>
 
   <br/><br/>
 
-  [**LinkedIn**](https://www.linkedin.com/in/ishan-gupta-976192419) &nbsp;•&nbsp; 
-  [**Email**](mailto:ishan.gupta@example.com) &nbsp;•&nbsp; 
-  [**Verified Repositories**](https://github.com/ishangupta1412?tab=repositories)
+  <!-- 3D Minted Metallic Coin Badges -->
+  <a href="https://www.linkedin.com/in/ishan-gupta-976192419" target="_blank" title="Connect on LinkedIn">
+    <img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:ishan.gupta@example.com" title="Send Email">
+    <img src="./assets/coin_gmail.svg" width="52" height="52" alt="Gmail Coin" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories">
+    <img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ishangupta1412" title="X Network">
+    <img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" />
+  </a>
+
+  <br/><br/>
+
+  <!-- Terminal Telemetry HUD -->
+  <img src="./terminal_hud.svg" width="100%" alt="Ishan Gupta - Systems Telemetry" />
 
 </div>
 
