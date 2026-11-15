@@ -35,6 +35,18 @@
 
 ---
 
+### Tactical Contribution Battleground
+
+<div align="center">
+  <img src="./assets/contrib-battle.webp" width="100%" alt="3D PUBG GitHub Contribution Battle Arena" />
+  <br/>
+  <sub>Isometric Erangel 52×7 sector • Dynamic commit cover barriers • Real-time firefight simulation</sub>
+</div>
+
+<br/>
+
+---
+
 ### Focus & Philosophy
 
 I build resilient, mathematically grounded software. My work centers on high-complexity engineering challenges: detecting distributed adversary behavior in enterprise authentication telemetry, deploying multimodal AI for statutory compliance, and engineering accessible, high-performance web systems.
