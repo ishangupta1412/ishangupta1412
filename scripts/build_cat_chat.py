@@ -1,0 +1,342 @@
+"""
+Generate the creative iMessage Chat SVG with an animated Mischievous Cat for Ishan Gupta.
+Pure SVG + CSS keyframes. Zero external dependencies. Zero fake screenshots.
+"""
+import re, os
+
+W = 680
+H = 430
+
+# Colors & Fonts
+# iMessage style: Light (#e9e9eb bubble, #1c1c1e text) | Dark (#2c2c2e bubble, #f2f2f7 text)
+
+BUBBLES = [
+    {
+        "id": "b1",
+        "x": 20, "y": 30, "w": 200, "h": 44,
+        "text": "Hey there! I'm Ishan 👋",
+        "font_size": 16,
+        "text_x": 18, "text_y": 28
+    },
+    {
+        "id": "b2",
+        "x": 20, "y": 92, "w": 475, "h": 44,
+        "text": "First-year engineering student passionate about math &amp; computing 📐⚡",
+        "font_size": 15,
+        "text_x": 18, "text_y": 28
+    },
+    {
+        "id": "b3",
+        "x": 20, "y": 154, "w": 490, "h": 44,
+        "text": "I love building clean software, experimenting with AI &amp; shipping code 💻🚀",
+        "font_size": 15,
+        "text_x": 18, "text_y": 28
+    },
+    {
+        "id": "b4",
+        "x": 20, "y": 216, "w": 440, "h": 44,
+        "text": "Always curious, solving hard problems &amp; exploring new ideas 💡✨",
+        "font_size": 15,
+        "text_x": 18, "text_y": 28
+    },
+    {
+        "id": "b5",
+        "x": 20, "y": 278, "w": 380, "h": 44,
+        "text": "Find me on X @ishangupta1412 or on LinkedIn 🤝",
+        "font_size": 15,
+        "text_x": 18, "text_y": 28,
+        "is_link": True,
+        "link": "https://x.com/ishangupta1412"
+    },
+    {
+        "id": "b6",
+        "x": 20, "y": 340, "w": 210, "h": 44,
+        "text": "Have a great day! ✌️",
+        "font_size": 16,
+        "text_x": 18, "text_y": 28
+    }
+]
+
+# Cat Keyframes Timeline (total 16s loop)
+# Cat positions:
+# P1 (0s-3.5s):   Sitting on Bubble 1 (x=160, y=10)
+# Jump 1 (3.5s-4.2s): Arcs from (160, 10) -> (390, 72) onto Bubble 2
+# P2 (4.2s-7s):   Paws & walks on Bubble 2 (x=390 -> x=440, y=72)
+# Jump 2 (7s-7.8s):   Leaps from (440, 72) -> (260, 134) onto Bubble 3
+# P3 (7.8s-10.5s): Bats at Bubble 3, curious head tilt
+# Jump 3 (10.5s-11.2s): Leaps from (260, 134) -> (380, 196) onto Bubble 4
+# Jump 4 (11.2s-12.0s): Drops down to Bubble 6 (x=175, y=320)
+# P4 (12s-15.2s):  Curls up on Bubble 6, snoozes (z Z Z)
+# Return (15.2s-16s): Wakes up, stretches, leaps back to P1!
+
+def generate_svg():
+    bubbles_svg = []
+    for b in BUBBLES:
+        bx, by, bw, bh = b["x"], b["y"], b["w"], b["h"]
+        tx, ty = b["text_x"], b["text_y"]
+        content = b["text"]
+        
+        # Link styling if applicable
+        if b.get("is_link"):
+            body = f'<a href="{b["link"]}" target="_blank"><text x="{tx}" y="{ty}" class="chat-text link-text font-ui" font-size="{b["font_size"]}">{content}</text></a>'
+        else:
+            body = f'<text x="{tx}" y="{ty}" class="chat-text font-ui" font-size="{b["font_size"]}">{content}</text>'
+
+        bubbles_svg.append(f"""
+    <!-- {b["id"]} -->
+    <g transform="translate({bx}, {by})" class="bubble-group">
+      <rect width="{bw}" height="{bh}" rx="20" class="bubble-bg" />
+      {body}
+    </g>""")
+
+    bubbles_code = "\n".join(bubbles_svg)
+
+    svg = f"""<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ishan Gupta - Interactive Chat with Mischievous Cat">
+  <style>
+    /* Typography and Palette */
+    .font-ui {{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      letter-spacing: -0.01em;
+    }}
+    .bubble-bg {{
+      fill: #e9e9eb;
+      transition: fill 0.3s;
+    }}
+    .chat-text {{
+      fill: #1c1c1e;
+      font-weight: 450;
+    }}
+    .link-text {{
+      fill: #007aff;
+      font-weight: 500;
+      text-decoration: underline;
+    }}
+
+    /* Dark Mode Support */
+    @media (prefers-color-scheme: dark) {{
+      .bubble-bg {{
+        fill: #2c2c2e;
+      }}
+      .chat-text {{
+        fill: #f2f2f7;
+      }}
+      .link-text {{
+        fill: #0a84ff;
+      }}
+    }}
+
+    /* Cat Animations */
+    .cat-actor {{
+      animation: catJourney 16s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    }}
+
+    @keyframes catJourney {{
+      /* 0% - 22% (0s - 3.5s): Sitting on Bubble 1 */
+      0%, 20% {{
+        transform: translate(165px, 6px);
+      }}
+      /* Crouch before leap 1 */
+      22% {{
+        transform: translate(165px, 9px) scale(1.05, 0.9);
+      }}
+      /* Leap 1 to Bubble 2 */
+      25% {{
+        transform: translate(290px, -20px) rotate(-10deg) scale(0.95, 1.05);
+      }}
+      27% {{
+        transform: translate(410px, 68px) scale(1.05, 0.95);
+      }}
+      /* Paws and walks on Bubble 2 (4.3s - 7s) */
+      29%, 40% {{
+        transform: translate(425px, 68px);
+      }}
+      /* Crouch before leap 2 */
+      42% {{
+        transform: translate(425px, 71px) scale(1.05, 0.9);
+      }}
+      /* Leap 2 to Bubble 3 */
+      45% {{
+        transform: translate(340px, 95px) rotate(12deg);
+      }}
+      48% {{
+        transform: translate(250px, 130px);
+      }}
+      /* Curious tilt on Bubble 3 (7.7s - 10s) */
+      50%, 60% {{
+        transform: translate(250px, 130px);
+      }}
+      /* Leap 3 to Bubble 4 */
+      62% {{
+        transform: translate(310px, 160px);
+      }}
+      65% {{
+        transform: translate(370px, 192px);
+      }}
+      /* Hangs out on Bubble 4 */
+      67%, 72% {{
+        transform: translate(370px, 192px);
+      }}
+      /* Leap 4 down to Bubble 6 */
+      75% {{
+        transform: translate(280px, 260px) rotate(8deg);
+      }}
+      78% {{
+        transform: translate(175px, 316px);
+      }}
+      /* Naps on Bubble 6 with z Z Z (12.5s - 15.2s) */
+      80%, 94% {{
+        transform: translate(175px, 316px);
+      }}
+      /* Wake up stretch and spring back to Bubble 1 */
+      96% {{
+        transform: translate(175px, 314px) scale(1.1, 0.85);
+      }}
+      98% {{
+        transform: translate(170px, 140px) scale(0.9, 1.1);
+      }}
+      100% {{
+        transform: translate(165px, 6px);
+      }}
+    }}
+
+    /* Tail Swish Animation */
+    .cat-tail-path {{
+      transform-origin: 3px 25px;
+      animation: tailWiggle 2.5s infinite ease-in-out;
+    }}
+    @keyframes tailWiggle {{
+      0%, 100% {{ transform: rotate(0deg); }}
+      30% {{ transform: rotate(-18deg); }}
+      70% {{ transform: rotate(14deg); }}
+    }}
+
+    /* Blinking Eyes */
+    .cat-eye {{
+      animation: catBlink 4s infinite;
+      transform-origin: center;
+    }}
+    @keyframes catBlink {{
+      0%, 45%, 55%, 100% {{ transform: scaleY(1); }}
+      50% {{ transform: scaleY(0.1); }}
+    }}
+
+    /* Paws Batting */
+    .cat-paw-left {{
+      animation: pawBat 3s infinite ease-in-out;
+      transform-origin: 18px 26px;
+    }}
+    @keyframes pawBat {{
+      0%, 70%, 100% {{ transform: rotate(0deg); }}
+      80% {{ transform: rotate(-25deg); }}
+      90% {{ transform: rotate(15deg); }}
+    }}
+
+    /* Floating Sleep Zzz */
+    .sleep-z {{
+      opacity: 0;
+      animation: zFloat 16s infinite;
+    }}
+    @keyframes zFloat {{
+      0%, 79% {{ opacity: 0; transform: translate(0, 0); }}
+      82% {{ opacity: 0.8; transform: translate(6px, -8px) scale(0.8); }}
+      88% {{ opacity: 1; transform: translate(12px, -18px) scale(1.1); }}
+      93% {{ opacity: 0; transform: translate(18px, -28px) scale(1.3); }}
+      100% {{ opacity: 0; }}
+    }}
+  </style>
+
+  <!-- Chat Bubbles Stack -->
+  <g>
+{bubbles_code}
+  </g>
+
+  <!-- Mischievous Animated Cat Actor -->
+  <g class="cat-actor">
+    <!-- Cat Group (Anchor point at bottom-center of paws) -->
+    <g transform="translate(-18, -30)">
+      
+      <!-- Tail -->
+      <g class="cat-tail-path">
+        <path d="M 6 22 C -4 20, -10 10, -6 0 C -4 -6, 2 -6, 0 -2 C -2 2, -3 8, 4 17" fill="none" stroke="#f39c12" stroke-width="4.5" stroke-linecap="round" />
+        <!-- Tail Tip (White tip) -->
+        <circle cx="-5" cy="-2" r="3" fill="#ffffff" />
+      </g>
+
+      <!-- Cat Body -->
+      <ellipse cx="16" cy="20" rx="14" ry="11" fill="#f39c12" />
+      <!-- Calico / Orange Pattern Patches -->
+      <path d="M 8 13 Q 14 18 18 11 Q 23 15 28 17 Q 24 28 12 28 Z" fill="#e67e22" opacity="0.6" />
+      <ellipse cx="16" cy="22" rx="9" ry="7" fill="#ffffff" opacity="0.9" />
+
+      <!-- Back Feet -->
+      <ellipse cx="6" cy="28" rx="5" ry="3" fill="#ffffff" stroke="#e67e22" stroke-width="0.8" />
+      <ellipse cx="26" cy="28" rx="5" ry="3" fill="#ffffff" stroke="#e67e22" stroke-width="0.8" />
+
+      <!-- Cat Head -->
+      <g transform="translate(16, 8)">
+        <!-- Ears -->
+        <!-- Left Ear -->
+        <polygon points="-11,-6 -5,-16 1,-7" fill="#f39c12" />
+        <polygon points="-9,-7 -5,-13 -1,-8" fill="#ffb8b8" />
+        <!-- Right Ear -->
+        <polygon points="1,-7 7,-16 13,-6" fill="#f39c12" />
+        <polygon points="3,-8 7,-13 11,-7" fill="#ffb8b8" />
+
+        <!-- Head Base -->
+        <circle cx="1" cy="-2" r="11" fill="#f39c12" />
+        <!-- White Muzzle -->
+        <ellipse cx="1" cy="2" rx="7" ry="5" fill="#ffffff" />
+
+        <!-- Eyes -->
+        <g class="cat-eye">
+          <ellipse cx="-3" cy="-3" rx="2.5" ry="3.5" fill="#2ecc71" />
+          <ellipse cx="5" cy="-3" rx="2.5" ry="3.5" fill="#2ecc71" />
+          <!-- Pupils -->
+          <ellipse cx="-2.5" cy="-3" rx="1.2" ry="2.8" fill="#1e272e" />
+          <ellipse cx="5.5" cy="-3" rx="1.2" ry="2.8" fill="#1e272e" />
+          <!-- Eye Catchlights -->
+          <circle cx="-3.5" cy="-4.5" r="0.8" fill="#ffffff" />
+          <circle cx="4.5" cy="-4.5" r="0.8" fill="#ffffff" />
+        </g>
+
+        <!-- Nose -->
+        <polygon points="0.2,0 1.8,0 1,1.2" fill="#ff7675" />
+
+        <!-- Cute Cat Mouth -->
+        <path d="M -2 2.5 Q 0.5 4 1 2.5 Q 1.5 4 4 2.5" fill="none" stroke="#2d3436" stroke-width="0.9" stroke-linecap="round" />
+
+        <!-- Whiskers -->
+        <line x1="-5" y1="1" x2="-14" y2="-1" stroke="#ffffff" stroke-width="1" stroke-linecap="round" />
+        <line x1="-5" y1="3" x2="-13" y2="4" stroke="#ffffff" stroke-width="1" stroke-linecap="round" />
+        <line x1="7" y1="1" x2="16" y2="-1" stroke="#ffffff" stroke-width="1" stroke-linecap="round" />
+        <line x1="7" y1="3" x2="15" y2="4" stroke="#ffffff" stroke-width="1" stroke-linecap="round" />
+      </g>
+
+      <!-- Front Paws -->
+      <g class="cat-paw-left">
+        <ellipse cx="11" cy="27" rx="4" ry="3" fill="#ffffff" stroke="#e67e22" stroke-width="0.8" />
+      </g>
+      <ellipse cx="21" cy="27" rx="4" ry="3" fill="#ffffff" stroke="#e67e22" stroke-width="0.8" />
+
+      <!-- Sleep Z Floating Bubbles -->
+      <g class="sleep-z">
+        <text x="24" y="-8" fill="#9b59b6" font-family="-apple-system, sans-serif" font-weight="bold" font-size="12">z</text>
+        <text x="32" y="-18" fill="#8e44ad" font-family="-apple-system, sans-serif" font-weight="bold" font-size="15">Z</text>
+      </g>
+
+    </g>
+  </g>
+</svg>"""
+    return svg
+
+if __name__ == "__main__":
+    out_path = r"C:\Users\Ishan Gupta\.gemini\antigravity\scratch\github-profile\assets\chat_animation.svg"
+    svg = generate_svg()
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"Generated {out_path} ({len(svg):,} bytes)")
+
+    # Validate XML
+    import xml.etree.ElementTree as ET
+    ET.fromstring(svg)
+    print("XML validated successfully!")

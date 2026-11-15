@@ -16,8 +16,14 @@
 
 ---
 
+### 3D Contribution Landscape
+
 <div align="center">
-  <img src="./assets/activity_map.svg" width="100%" alt="Contribution activity map" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
+    <img alt="3D Real-Time Contribution Grid" src="./profile-3d-contrib/profile-green-animate.svg" width="100%" />
+  </picture>
+  <sub>Real-time 3D contribution matrix · Auto-compiled from GitHub API</sub>
 </div>
 
 ---
