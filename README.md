@@ -26,13 +26,20 @@
 
 ### 3D Contribution Landscape
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
-    <img alt="3D Real-Time Contribution Grid" src="./profile-3d-contrib/profile-green-animate.svg" width="100%" />
-  </picture>
-  <sub>Real-time 3D contribution matrix · Auto-compiled from GitHub API</sub>
-</div>
+<table>
+  <tr>
+    <td width="62%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
+        <img alt="3D Real-Time Contribution Grid" src="./profile-3d-contrib/profile-green-animate.svg" width="100%" />
+      </picture>
+      <sub>Real-time 3D contribution matrix · Auto-compiled from GitHub API</sub>
+    </td>
+    <td width="38%" valign="middle" align="center">
+      <img src="https://user-images.githubusercontent.com/74038190/212749171-b84692a8-2b04-4e3b-93ca-ac14705da224.gif" width="100%" alt="Development Time" />
+    </td>
+  </tr>
+</table>
 
 ---
 
