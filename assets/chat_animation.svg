@@ -1,0 +1,153 @@
+<svg width="800" height="240" viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chat simulation — ishangupta1412">
+  <defs>
+    <style>
+      @keyframes db { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+      .d1{animation:db .85s .00s infinite ease-in-out}
+      .d2{animation:db .85s .18s infinite ease-in-out}
+      .d3{animation:db .85s .36s infinite ease-in-out}
+
+      /* bubble 1 */
+      .ty1{opacity:0;animation:ty1_ 20s infinite}
+      @keyframes ty1_{
+        0%,0.00%{opacity:0}
+        0.75%{opacity:1}
+        7.00%{opacity:1}
+        9.00%{opacity:0}
+        100%{opacity:0}
+      }
+      .m1{opacity:0;animation:m1_ 20s infinite}
+      @keyframes m1_{
+        0%,8.00%{opacity:0}
+        10.50%{opacity:1}
+        85.00%{opacity:1}
+        95.00%{opacity:0}
+        100%{opacity:0}
+      }
+
+      /* bubble 2 */
+      .ty2{opacity:0;animation:ty2_ 20s infinite}
+      @keyframes ty2_{
+        0%,14.75%{opacity:0}
+        15.75%{opacity:1}
+        22.00%{opacity:1}
+        24.00%{opacity:0}
+        100%{opacity:0}
+      }
+      .m2{opacity:0;animation:m2_ 20s infinite}
+      @keyframes m2_{
+        0%,23.00%{opacity:0}
+        25.50%{opacity:1}
+        85.00%{opacity:1}
+        95.00%{opacity:0}
+        100%{opacity:0}
+      }
+
+      /* bubble 3 */
+      .ty3{opacity:0;animation:ty3_ 20s infinite}
+      @keyframes ty3_{
+        0%,29.75%{opacity:0}
+        30.75%{opacity:1}
+        37.00%{opacity:1}
+        39.00%{opacity:0}
+        100%{opacity:0}
+      }
+      .m3{opacity:0;animation:m3_ 20s infinite}
+      @keyframes m3_{
+        0%,38.00%{opacity:0}
+        40.50%{opacity:1}
+        85.00%{opacity:1}
+        95.00%{opacity:0}
+        100%{opacity:0}
+      }
+
+      /* bubble 4 */
+      .ty4{opacity:0;animation:ty4_ 20s infinite}
+      @keyframes ty4_{
+        0%,44.75%{opacity:0}
+        45.75%{opacity:1}
+        52.00%{opacity:1}
+        54.00%{opacity:0}
+        100%{opacity:0}
+      }
+      .m4{opacity:0;animation:m4_ 20s infinite}
+      @keyframes m4_{
+        0%,53.00%{opacity:0}
+        55.50%{opacity:1}
+        85.00%{opacity:1}
+        95.00%{opacity:0}
+        100%{opacity:0}
+      }
+    </style>
+    <clipPath id="cc"><rect width="800" height="240" rx="8"/></clipPath>
+  </defs>
+  <g clip-path="url(#cc)">
+    <!-- Background -->
+    <rect width="800" height="240" fill="#0d1117"/>
+
+    <!-- Header -->
+    <rect width="800" height="44" fill="#161b22"/>
+    <line x1="0" y1="44" x2="800" y2="44" stroke="#30363d" stroke-width="1"/>
+
+    <!-- Online indicator with pulse -->
+    <circle cx="20" cy="22" r="5" fill="#3fb950"/>
+    <circle cx="20" cy="22" r="5" fill="none" stroke="#3fb950" stroke-width="2">
+      <animate attributeName="r" values="5;13;5" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".6;0;.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Header title -->
+    <text x="34" y="27" fill="#e6edf3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="600">ishangupta1412</text>
+    <text x="154" y="27" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif" font-size="11">· Active · Systems Engineer</text>
+
+    <!-- Window chrome dots -->
+    <circle cx="776" cy="22" r="5" fill="#30363d"/>
+    <circle cx="758" cy="22" r="5" fill="#30363d"/>
+    <circle cx="740" cy="22" r="5" fill="#30363d"/>
+
+    <!-- Messages -->
+    <g class="ty1">
+      <rect x="16" y="56" width="52" height="32" rx="14" fill="#21262d"/>
+      <circle cx="29" cy="72" r="3" fill="#8b949e" class="d1"/>
+      <circle cx="42" cy="72" r="3" fill="#8b949e" class="d2"/>
+      <circle cx="55" cy="72" r="3" fill="#8b949e" class="d3"/>
+    </g>
+    <g class="m1">
+      <rect x="16" y="56" width="351" height="32" rx="14" fill="#21262d"/>
+      <text x="30" y="76" fill="#c9d1d9" font-family='SFMono-Regular',Consolas,'Liberation Mono',monospace font-size="12">ALERT: distributed password spray detected</text>
+    </g>
+    <g class="ty2">
+      <rect x="732" y="98" width="52" height="32" rx="14" fill="#1f6feb"/>
+      <circle cx="745" cy="114" r="3" fill="rgba(255,255,255,.75)" class="d1"/>
+      <circle cx="758" cy="114" r="3" fill="rgba(255,255,255,.75)" class="d2"/>
+      <circle cx="771" cy="114" r="3" fill="rgba(255,255,255,.75)" class="d3"/>
+    </g>
+    <g class="m2">
+      <rect x="312" y="98" width="472" height="32" rx="14" fill="#1f6feb"/>
+      <text x="326" y="118" fill="#ffffff" font-family='SFMono-Regular',Consolas,'Liberation Mono',monospace font-size="12">correlating 847 auth events · NOBELIUM signature confirmed</text>
+    </g>
+    <g class="ty3">
+      <rect x="16" y="140" width="52" height="32" rx="14" fill="#21262d"/>
+      <circle cx="29" cy="156" r="3" fill="#8b949e" class="d1"/>
+      <circle cx="42" cy="156" r="3" fill="#8b949e" class="d2"/>
+      <circle cx="55" cy="156" r="3" fill="#8b949e" class="d3"/>
+    </g>
+    <g class="m3">
+      <rect x="16" y="140" width="138" height="32" rx="14" fill="#21262d"/>
+      <text x="30" y="160" fill="#c9d1d9" font-family='SFMono-Regular',Consolas,'Liberation Mono',monospace font-size="12">response time?</text>
+    </g>
+    <g class="ty4">
+      <rect x="732" y="182" width="52" height="32" rx="14" fill="#1f6feb"/>
+      <circle cx="745" cy="198" r="3" fill="rgba(255,255,255,.75)" class="d1"/>
+      <circle cx="758" cy="198" r="3" fill="rgba(255,255,255,.75)" class="d2"/>
+      <circle cx="771" cy="198" r="3" fill="rgba(255,255,255,.75)" class="d3"/>
+    </g>
+    <g class="m4">
+      <rect x="479" y="182" width="305" height="32" rx="14" fill="#1f6feb"/>
+      <text x="493" y="202" fill="#ffffff" font-family='SFMono-Regular',Consolas,'Liberation Mono',monospace font-size="12">patched. STIX 2.1 report generated ✓</text>
+    </g>
+
+    <!-- Footer timestamp -->
+    <text x="400" y="232" text-anchor="middle" fill="#30363d" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif" font-size="10">Today</text>
+  </g>
+  <rect width="800" height="240" rx="8" fill="none" stroke="#30363d" stroke-width="1"/>
+</svg>

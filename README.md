@@ -17,9 +17,20 @@
   <!-- Terminal Telemetry HUD -->
   <img src="./terminal_hud.svg" width="100%" alt="Ishan Gupta - Systems Telemetry" />
 
+  <br/><br/>
+
+  <!-- Chat Animation -->
+  <img src="./assets/chat_animation.svg" width="100%" alt="Chat simulation" />
+
 </div>
 
 <br/>
+
+---
+
+<div align="center">
+  <img src="./assets/activity_map.svg" width="100%" alt="Contribution activity map" />
+</div>
 
 ---
 
