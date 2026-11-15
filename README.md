@@ -126,6 +126,43 @@ Tools & Env   Git, GitHub, VS Code, Linux / Ubuntu, Docker
 
 ---
 
+### 🎯 Vibes & Workflow
+
 <div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="380" alt="Coding Vibe" />&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/74038190/212750155-3ceddfbd-19d3-40a3-87af-8d329c8323c4.gif" width="380" alt="Awesome Work Environment" />
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212748842-9fcbad5b-6173-4175-8a61-521f3dbb7514.gif" width="380" alt="Multiprogramming Environment" />&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/74038190/212750147-854a394f-fee9-4080-9770-78a4b7ece53f.gif" width="380" alt="Multi Screen Analysis" />
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif" width="380" alt="Curious Tech Geek" />&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/74038190/212750672-2f3f2b50-c84f-4ed8-a60a-849ae69ff9df.gif" width="380" alt="Productive Working" />
+
+</div>
+
+---
+
+### ⚡ The Dev Aesthetic
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212747657-7a8d59da-69c8-4110-8ea8-f8102fd0b413.gif" width="250" alt="Eat Sleep Code Repeat" />&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/74038190/213760710-201a57d2-95f1-45c7-b910-44faf209d2f8.gif" width="250" alt="Ultra Confident Coder" />&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/74038190/213760718-ca064723-1c29-4b82-985c-aadc7f57c090.gif" width="250" alt="Binary Code" />
+
+<br>
+
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/82f73bdc-f54b-4803-ace4-1c019cb875ab" width="380" alt="Deep Focus" />&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/74038190/212751818-13da6fd2-27ca-45c4-9c64-3940ccfa6fd3.gif" width="250" alt="Pro Coder" />
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/74038190/216649417-9acc58df-9186-4132-ad43-819a57babb67.gif" width="160" alt="Working Sticker 1" /><img src="https://user-images.githubusercontent.com/74038190/216649421-9e9387cc-b2d3-4375-97e2-f4c43373d3ae.gif" width="160" alt="Working Sticker 2" /><img src="https://user-images.githubusercontent.com/74038190/216649426-0c2ee152-84d8-4707-85c4-27a378d2f78a.gif" width="160" alt="Working Sticker 3" />
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" alt="Gradient Divider" />
   <sub>Engineered with precision. All systems open source under the MIT License.</sub>
 </div>
