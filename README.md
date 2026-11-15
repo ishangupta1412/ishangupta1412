@@ -9,7 +9,7 @@
 
   <!-- 3D Minted Metallic Coin Badges -->
   <p align="center">
-    <a href="https://www.linkedin.com/in/ishan-gupta-976192419" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:ishan.gupta@example.com" title="Send Email"><img src="./assets/coin_gmail.svg" width="52" height="52" alt="Gmail Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412" title="X Network"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
+    <a href="https://www.linkedin.com/in/ishan-gupta-976192419" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:ishan14122007@gmail.com" title="Send Email"><img src="./assets/coin_gmail.svg" width="52" height="52" alt="Gmail Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412" title="X Network"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
   </p>
 
   <br/><br/>
@@ -54,7 +54,8 @@ I build resilient, mathematically grounded software. My work centers on high-com
       <p><em>Enterprise SOC detection layer countering NOBELIUM distributed password sprays. Built for <strong>Microsoft Innovate 2026</strong>.</em></p>
       <p>
         <a href="https://quorum-soc.vercel.app/"><strong>Live Production</strong></a> &nbsp;|&nbsp; 
-        <a href="https://github.com/ishangupta1412/Quorum"><strong>Source Code</strong></a>
+        <a href="https://github.com/ishangupta1412/Quorum"><strong>Source Code</strong></a> &nbsp;|&nbsp;
+        <a href="https://github.com/ishangupta1412/Quorum/stargazers"><img src="https://img.shields.io/github/stars/ishangupta1412/Quorum?style=flat&color=38bdf8&label=%E2%98%85%20stars" alt="Quorum Stars" /></a>
       </p>
       <ul>
         <li>Correlates distributed VPN auth telemetry via <strong>Bipartite Graph Union-Find</strong> clustering.</li>
@@ -68,7 +69,8 @@ I build resilient, mathematically grounded software. My work centers on high-com
       <p><em>Multimodal regulatory cockpit & technical guidance platform. Built for <strong>Smart India Hackathon 2026 (SIH26107)</strong>.</em></p>
       <p>
         <a href="https://bis-saathi-nine.vercel.app/"><strong>Live Production</strong></a> &nbsp;|&nbsp; 
-        <a href="https://github.com/ishangupta1412/sih26107-bis-saathi"><strong>Source Code</strong></a>
+        <a href="https://github.com/ishangupta1412/sih26107-bis-saathi"><strong>Source Code</strong></a> &nbsp;|&nbsp;
+        <a href="https://github.com/ishangupta1412/sih26107-bis-saathi/stargazers"><img src="https://img.shields.io/github/stars/ishangupta1412/sih26107-bis-saathi?style=flat&color=10b981&label=%E2%98%85%20stars" alt="BIS Saathi Stars" /></a>
       </p>
       <ul>
         <li><strong>Gemini 3.8 Flash Vision</strong> photo forensics for instant packaging compliance verification.</li>
