@@ -1,13 +1,21 @@
 <div align="center">
 
-  <!-- iMessage Intro Chat Animation (Jason Long style) -->
-  <img src="./assets/chat_animation.svg" width="550" alt="Hi, I'm Ishan" />
+  <!-- WhatsApp Chat Animation UI -->
+  <img src="./assets/chat_animation.svg" width="600" alt="Ishan Gupta - WhatsApp Chat" />
 
   <br/><br/>
 
   <!-- 3D Minted Metallic Coin Badges -->
   <p align="center">
     <a href="https://www.linkedin.com/in/ishan-gupta-976192419" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:ishan14122007@gmail.com" title="Send Email"><img src="./assets/coin_gmail.svg" width="52" height="52" alt="Gmail Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://x.com/ishangupta1412" title="Follow on X"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
+  </p>
+
+  <!-- Live Verified Profile Metrics Badges -->
+  <p align="center">
+    <img alt="Public Repos" src="https://img.shields.io/badge/Public%20Repos-5-238636?style=flat-square&logo=github" />&nbsp;
+    <img alt="Total Stars" src="https://img.shields.io/badge/%E2%98%85%20Total%20Stars-6-38bdf8?style=flat-square" />&nbsp;
+    <img alt="3D Live Grid" src="https://img.shields.io/badge/3D%20Telemetry-Active-10b981?style=flat-square" />&nbsp;
+    <img alt="Galaga Arena" src="https://img.shields.io/badge/Galaga%20Grid-Online-f59e0b?style=flat-square" />
   </p>
 
 </div>
@@ -91,7 +99,21 @@ I build resilient, mathematically grounded software. My work centers on high-com
 
 ---
 
-### Core Stack
+### Core Stack & Technologies
+
+<p align="center">
+  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img alt="Python" src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img alt="Next.js" src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
+  <img alt="React" src="https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
+  <img alt="Node.js" src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+  <img alt="FastAPI" src="https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+  <img alt="Docker" src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img alt="Linux" src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+</p>
 
 ```
 Languages     TypeScript, JavaScript (ESNext), Python, PowerShell, SQL
