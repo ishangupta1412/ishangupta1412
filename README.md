@@ -1,14 +1,14 @@
 <div align="center">
 
+  <!-- iMessage Intro Chat Animation (Jason Long style) -->
+  <img src="./assets/chat_animation.svg" width="550" alt="Hi, I'm Ishan" />
+
+  <br/><br/>
+
   <!-- 3D Minted Metallic Coin Badges -->
   <p align="center">
     <a href="https://www.linkedin.com/in/ishan-gupta-976192419" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:ishan14122007@gmail.com" title="Send Email"><img src="./assets/coin_gmail.svg" width="52" height="52" alt="Gmail Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://x.com/ishangupta1412" title="Follow on X"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
   </p>
-
-  <br/>
-
-  <!-- Chat Animation -->
-  <img src="./assets/chat_animation.svg" width="100%" alt="Chat simulation" />
 
 </div>
 
