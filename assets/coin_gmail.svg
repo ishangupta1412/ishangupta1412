@@ -1,77 +1,84 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="56" height="56">
   <defs>
-    <!-- Outer Rim Metallic Gradient -->
-    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFE082" />
-      <stop offset="25%" stop-color="#FFB300" />
-      <stop offset="50%" stop-color="#FFF8E1" />
-      <stop offset="75%" stop-color="#FF8F00" />
-      <stop offset="100%" stop-color="#FFA000" />
+    <!-- Tactical Gunmetal Bevel Rim -->
+    <linearGradient id="tacticalRim_gmail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="25%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="75%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#334155" />
     </linearGradient>
 
-    <!-- Ruby Enamel Face -->
-    <radialGradient id="gmailFace" cx="35%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#E53935" />
-      <stop offset="60%" stop-color="#C62828" />
-      <stop offset="100%" stop-color="#8E0000" />
+    <!-- Combat Face Radial -->
+    <radialGradient id="combatFace_gmail" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#EA4335" />
+      <stop offset="65%" stop-color="#8B0000" />
+      <stop offset="100%" stop-color="#080C14" />
     </radialGradient>
 
-    <!-- Specular Sheen Beam -->
-    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Tactical Radar Sheen -->
+    <linearGradient id="sheen_gmail" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.1" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.65" />
-      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.7" />
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.05" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="coinDepth" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.6" />
+    <filter id="depth_gmail" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.75" />
     </filter>
 
-    <filter id="embossLogo">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="0.8" flood-color="#550000" flood-opacity="0.9" />
-    </filter>
-
-    <clipPath id="coinClip">
-      <circle cx="32" cy="32" r="26" />
+    <clipPath id="faceClip_gmail">
+      <circle cx="32" cy="32" r="23" />
     </clipPath>
   </defs>
 
   <style>
-    @keyframes sheenPass {
+    @keyframes sheenSweep_gmail {
       0% { transform: translateX(-64px) translateY(-64px); }
-      30%, 100% { transform: translateX(64px) translateY(64px); }
+      35%, 100% { transform: translateX(64px) translateY(64px); }
     }
-    .coin-sheen {
-      animation: sheenPass 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      animation-delay: 0.8s;
+    .coin-sheen_gmail {
+      animation: sheenSweep_gmail 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation-delay: 0.9s;
     }
   </style>
 
-  <!-- 3D Shadow -->
-  <circle cx="32" cy="34" r="28" fill="#000000" opacity="0.4" />
+  <!-- 3D Ground Shadow -->
+  <circle cx="32" cy="34.5" r="27" fill="#000000" opacity="0.6" />
 
-  <!-- Outer Milled Rim -->
-  <circle cx="32" cy="32" r="28" fill="url(#goldRim)" filter="url(#coinDepth)" />
+  <!-- Heavy Outer Tactical Rim -->
+  <circle cx="32" cy="32" r="27" fill="url(#tacticalRim_gmail)" filter="url(#depth_gmail)" />
 
-  <!-- Inner Ridge Ring -->
-  <circle cx="32" cy="32" r="26.5" fill="none" stroke="#FFE082" stroke-width="0.8" stroke-opacity="0.8" />
-  <circle cx="32" cy="32" r="25.5" fill="none" stroke="#FF8F00" stroke-width="0.8" stroke-opacity="0.9" />
+  <!-- Military Beveled Ring -->
+  <circle cx="32" cy="32" r="24.5" fill="none" stroke="#0F172A" stroke-width="1.2" />
+  <circle cx="32" cy="32" r="23.5" fill="none" stroke="#94A3B8" stroke-width="0.8" stroke-opacity="0.7" />
 
-  <!-- Recessed Coin Face -->
-  <circle cx="32" cy="32" r="25" fill="url(#gmailFace)" />
+  <!-- 4 Tactical Rivet Bolts -->
+  <circle cx="32" cy="6.5" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
+  <circle cx="57.5" cy="32" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
+  <circle cx="32" cy="57.5" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
+  <circle cx="6.5" cy="32" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
 
-  <!-- Embossed Gmail Envelope Logo -->
-  <g filter="url(#embossLogo)" fill="#FFFFFF" transform="translate(19, 21.5)">
-    <path d="M 2 3 C 0.9 3 0 3.9 0 5 L 0 21 C 0 22.1 0.9 23 2 23 L 24 23 C 25.1 23 26 22.1 26 21 L 26 5 C 26 3.9 25.1 3 24 3 L 2 3 Z M 13 14.5 L 3.5 6.5 L 22.5 6.5 L 13 14.5 Z M 2 8 L 8.5 13.5 L 2 19.5 L 2 8 Z M 24 8 L 24 19.5 L 17.5 13.5 L 24 8 Z M 10 14.8 L 13 17.2 L 16 14.8 L 22.2 21 L 3.8 21 L 10 14.8 Z" />
+  <!-- Recessed Combat Face -->
+  <circle cx="32" cy="32" r="23" fill="url(#combatFace_gmail)" />
+
+  <!-- Tactical Reticle Crosshairs (PUBG sight notches) -->
+  <path d="M 32 10 L 32 13 M 32 51 L 32 54 M 10 32 L 13 32 M 51 32 L 54 32" stroke="#00F0FF" stroke-width="1.3" stroke-opacity="0.8" />
+
+  <!-- Embossed Official Brand Logo -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <g transform="translate(19.5, 22)">
+  <path d="M 2 3 C 0.9 3 0 3.9 0 5 L 0 20 C 0 21.1 0.9 22 2 22 L 23 22 C 24.1 22 25 21.1 25 20 L 25 5 C 25 3.9 24.1 3 23 3 L 2 3 Z M 12.5 13.8 L 3.5 6 L 21.5 6 L 12.5 13.8 Z M 2 7.5 L 8 13 L 2 18.5 L 2 7.5 Z M 23 7.5 L 23 18.5 L 17 13 L 23 7.5 Z M 9.5 14.2 L 12.5 16.5 L 15.5 14.2 L 21.2 20 L 3.8 20 L 9.5 14.2 Z" />
+</g>
   </g>
 
-  <!-- Specular Sheen Animation Layer -->
-  <g clip-path="url(#coinClip)">
-    <rect class="coin-sheen" x="-32" y="-32" width="128" height="128" fill="url(#sheen)" />
+  <!-- Animated Cyan Laser Sheen -->
+  <g clip-path="url(#faceClip_gmail)">
+    <rect class="coin-sheen_gmail" x="-32" y="-32" width="128" height="128" fill="url(#sheen_gmail)" />
   </g>
 
-  <!-- Subtle Top Rim Light -->
-  <path d="M 12 18 A 25 25 0 0 1 52 18" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.5" />
+  <!-- Top Rim Specular Glint -->
+  <path d="M 14 18 A 24 24 0 0 1 50 18" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-opacity="0.5" />
 </svg>

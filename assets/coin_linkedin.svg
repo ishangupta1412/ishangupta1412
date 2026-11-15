@@ -1,81 +1,86 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="56" height="56">
   <defs>
-    <!-- Outer Rim Metallic Gradient (3D Gold / Brass Bevel) -->
-    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFE082" />
-      <stop offset="25%" stop-color="#FFB300" />
-      <stop offset="50%" stop-color="#FFF8E1" />
-      <stop offset="75%" stop-color="#FF8F00" />
-      <stop offset="100%" stop-color="#FFA000" />
+    <!-- Tactical Gunmetal Bevel Rim -->
+    <linearGradient id="tacticalRim_linkedin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="25%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="75%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#334155" />
     </linearGradient>
 
-    <!-- Coin Inner Enamel Face -->
-    <radialGradient id="coinFace" cx="35%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#008FD5" />
-      <stop offset="60%" stop-color="#006699" />
-      <stop offset="100%" stop-color="#004471" />
+    <!-- Combat Face Radial -->
+    <radialGradient id="combatFace_linkedin" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0077B5" />
+      <stop offset="65%" stop-color="#004B87" />
+      <stop offset="100%" stop-color="#080C14" />
     </radialGradient>
 
-    <!-- Specular Sheen Beam -->
-    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Tactical Radar Sheen -->
+    <linearGradient id="sheen_linkedin" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.1" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.65" />
-      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.7" />
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.05" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="coinDepth" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.6" />
+    <filter id="depth_linkedin" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.75" />
     </filter>
 
-    <filter id="embossLogo">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="0.8" flood-color="#002B47" flood-opacity="0.9" />
-    </filter>
-
-    <!-- Clip Path for Coin Face -->
-    <clipPath id="coinClip">
-      <circle cx="32" cy="32" r="26" />
+    <clipPath id="faceClip_linkedin">
+      <circle cx="32" cy="32" r="23" />
     </clipPath>
   </defs>
 
   <style>
-    @keyframes sheenPass {
+    @keyframes sheenSweep_linkedin {
       0% { transform: translateX(-64px) translateY(-64px); }
-      30%, 100% { transform: translateX(64px) translateY(64px); }
+      35%, 100% { transform: translateX(64px) translateY(64px); }
     }
-    .coin-sheen {
-      animation: sheenPass 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    .coin-sheen_linkedin {
+      animation: sheenSweep_linkedin 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation-delay: 0s;
     }
   </style>
 
-  <!-- 3D Shadow -->
-  <circle cx="32" cy="34" r="28" fill="#000000" opacity="0.4" />
+  <!-- 3D Ground Shadow -->
+  <circle cx="32" cy="34.5" r="27" fill="#000000" opacity="0.6" />
 
-  <!-- Outer Milled Rim -->
-  <circle cx="32" cy="32" r="28" fill="url(#goldRim)" filter="url(#coinDepth)" />
+  <!-- Heavy Outer Tactical Rim -->
+  <circle cx="32" cy="32" r="27" fill="url(#tacticalRim_linkedin)" filter="url(#depth_linkedin)" />
 
-  <!-- Inner Ridge Ring -->
-  <circle cx="32" cy="32" r="26.5" fill="none" stroke="#FFE082" stroke-width="0.8" stroke-opacity="0.8" />
-  <circle cx="32" cy="32" r="25.5" fill="none" stroke="#FF8F00" stroke-width="0.8" stroke-opacity="0.9" />
+  <!-- Military Beveled Ring -->
+  <circle cx="32" cy="32" r="24.5" fill="none" stroke="#0F172A" stroke-width="1.2" />
+  <circle cx="32" cy="32" r="23.5" fill="none" stroke="#94A3B8" stroke-width="0.8" stroke-opacity="0.7" />
 
-  <!-- Recessed Coin Face -->
-  <circle cx="32" cy="32" r="25" fill="url(#coinFace)" />
+  <!-- 4 Tactical Rivet Bolts -->
+  <circle cx="32" cy="6.5" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
+  <circle cx="57.5" cy="32" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
+  <circle cx="32" cy="57.5" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
+  <circle cx="6.5" cy="32" r="1.3" fill="#E2E8F0" stroke="#0F172A" stroke-width="0.6" />
 
-  <!-- Embossed Official LinkedIn 'in' Logo -->
-  <g filter="url(#embossLogo)" fill="#FFFFFF" transform="translate(20.5, 20.5)">
-    <!-- 'i' -->
-    <rect x="0.5" y="7.5" width="4.8" height="15.5" rx="1" />
-    <circle cx="2.9" cy="2.5" r="2.7" />
-    <!-- 'n' -->
-    <path d="M 8.5 7.5 L 13.1 7.5 L 13.1 9.8 C 14.1 8.2 16.1 7.2 18.5 7.2 C 22.5 7.2 24.5 9.7 24.5 14.5 L 24.5 23 L 19.7 23 L 19.7 15.2 C 19.7 13.2 18.9 12.0 17.1 12.0 C 15.3 12.0 14.3 13.3 14.3 15.4 L 14.3 23 L 9.5 23 L 9.5 7.5 Z" />
+  <!-- Recessed Combat Face -->
+  <circle cx="32" cy="32" r="23" fill="url(#combatFace_linkedin)" />
+
+  <!-- Tactical Reticle Crosshairs (PUBG sight notches) -->
+  <path d="M 32 10 L 32 13 M 32 51 L 32 54 M 10 32 L 13 32 M 51 32 L 54 32" stroke="#00F0FF" stroke-width="1.3" stroke-opacity="0.8" />
+
+  <!-- Embossed Official Brand Logo -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <g transform="translate(21, 21)">
+  <rect x="0.5" y="7" width="4.5" height="15" rx="1" />
+  <circle cx="2.7" cy="2.3" r="2.5" />
+  <path d="M 8 7 L 12.3 7 L 12.3 9.2 C 13.2 7.8 15.1 6.8 17.3 6.8 C 21 6.8 23 9.2 23 13.8 L 23 22 L 18.5 22 L 18.5 14.5 C 18.5 12.6 17.7 11.5 16 11.5 C 14.3 11.5 13.4 12.7 13.4 14.7 L 13.4 22 L 8.9 22 L 8.9 7 Z" />
+</g>
   </g>
 
-  <!-- Specular Sheen Animation Layer -->
-  <g clip-path="url(#coinClip)">
-    <rect class="coin-sheen" x="-32" y="-32" width="128" height="128" fill="url(#sheen)" />
+  <!-- Animated Cyan Laser Sheen -->
+  <g clip-path="url(#faceClip_linkedin)">
+    <rect class="coin-sheen_linkedin" x="-32" y="-32" width="128" height="128" fill="url(#sheen_linkedin)" />
   </g>
 
-  <!-- Subtle Top Rim Light -->
-  <path d="M 12 18 A 25 25 0 0 1 52 18" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.5" />
+  <!-- Top Rim Specular Glint -->
+  <path d="M 14 18 A 24 24 0 0 1 50 18" fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-opacity="0.5" />
 </svg>
