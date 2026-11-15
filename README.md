@@ -1,23 +1,11 @@
 <div align="center">
 
-  <!-- Sci-Fi Pixel / Hologram Looping Avatar -->
-  <a href="https://github.com/ishangupta1412">
-    <img src="./assets/avatar_scifi_loop.gif" width="150" height="150" style="border-radius: 50%;" alt="Ishan Gupta - Sci-Fi Operative" />
-  </a>
-
-  <br/><br/>
-
   <!-- 3D Minted Metallic Coin Badges -->
   <p align="center">
     <a href="https://www.linkedin.com/in/ishan-gupta-976192419" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:ishan14122007@gmail.com" title="Send Email"><img src="./assets/coin_gmail.svg" width="52" height="52" alt="Gmail Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://x.com/ishangupta1412" title="Follow on X"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
   </p>
 
-  <br/><br/>
-
-  <!-- Terminal Telemetry HUD -->
-  <img src="./terminal_hud.svg" width="100%" alt="Ishan Gupta - Systems Telemetry" />
-
-  <br/><br/>
+  <br/>
 
   <!-- Chat Animation -->
   <img src="./assets/chat_animation.svg" width="100%" alt="Chat simulation" />
@@ -79,7 +67,7 @@ I build resilient, mathematically grounded software. My work centers on high-com
     </td>
     <td width="50%" valign="top">
       <h3>🇮🇳 BIS Saathi</h3>
-      <p><em>Multimodal regulatory cockpit & technical guidance platform. Built for <strong>Smart India Hackathon 2026 (SIH26107)</strong>.</em></p>
+      <p><em>Multimodal regulatory cockpit &amp; technical guidance platform. Built for <strong>Smart India Hackathon 2026 (SIH26107)</strong>.</em></p>
       <p>
         <a href="https://bis-saathi-nine.vercel.app/"><strong>Live Production</strong></a> &nbsp;|&nbsp; 
         <a href="https://github.com/ishangupta1412/sih26107-bis-saathi"><strong>Source Code</strong></a> &nbsp;|&nbsp;
@@ -88,7 +76,7 @@ I build resilient, mathematically grounded software. My work centers on high-com
       <ul>
         <li><strong>Gemini 3.8 Flash Vision</strong> photo forensics for instant packaging compliance verification.</li>
         <li><strong>Supabase pgvector RAG</strong> grounding answers across 20,000+ Indian Standards (IS codes).</li>
-        <li>Web Speech API supporting <strong>22 Scheduled Indic languages</strong>, compliant with GIGW 3.0 & IS 17802:2021.</li>
+        <li>Web Speech API supporting <strong>22 Scheduled Indic languages</strong>, compliant with GIGW 3.0 &amp; IS 17802:2021.</li>
       </ul>
       <p><sub><code>Next.js 16</code> • <code>React 19</code> • <code>Gemini Flash</code> • <code>Supabase pgvector</code> • <code>Tailwind v4</code></sub></p>
     </td>
