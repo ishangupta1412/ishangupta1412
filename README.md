@@ -26,8 +26,8 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ishangupta1412/ishangupta1412/output/galaga-contribution-graph-dark.svg" />
-    <img alt="Galaga Contribution Graph" src="https://raw.githubusercontent.com/ishangupta1412/ishangupta1412/output/galaga-contribution-graph.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ishangupta1412/ishangupta1412/output/galaga-contribution-graph-dark.svg?v=2" />
+    <img alt="Galaga Contribution Graph" src="https://raw.githubusercontent.com/ishangupta1412/ishangupta1412/output/galaga-contribution-graph.svg?v=2" width="100%" />
   </picture>
   <sub>Live contribution grid · Galaga fighters locked on · Updates daily at 00:00 UTC</sub>
 </div>
