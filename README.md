@@ -57,13 +57,29 @@
 
 ---
 
-### Focus & Philosophy
+### 📐 Engineering Philosophy & Core Focus
 
-I build resilient, mathematically grounded software. My work centers on high-complexity engineering challenges: detecting distributed adversary behavior in enterprise authentication telemetry, deploying multimodal AI for statutory compliance, and engineering accessible, high-performance web systems.
+> *"Simplicity is a prerequisite for reliability. I believe in first-principles reasoning, mathematical rigor, and building systems that hold up under real-world pressure."*
 
-- **Enterprise Defense**: Graph algorithms for low-and-slow attack correlation and tamper-evident audit ledgers.
-- **Multimodal AI & RAG**: Semantic vector retrieval and vision forensics grounded in statutory standards.
-- **Modern Web Architecture**: Next.js (App Router), TypeScript, React 19, and accessible design systems (IS 17802 / WCAG 2.1 AA).
+<table>
+  <tr>
+    <td width="33.3%" valign="top">
+      <h4>⚡ Mathematical Rigor</h4>
+      <p>Grounding software in robust algorithms — from bipartite graph clustering and consensus arithmetic to cryptographic SHA-256 audit ledgers.</p>
+      <sub><code>Graph Theory</code> • <code>Algorithms</code> • <code>Ledgers</code></sub>
+    </td>
+    <td width="33.3%" valign="top">
+      <h4>🧠 Applied Intelligence</h4>
+      <p>Leveraging multimodal vision models and high-dimensional vector search (RAG) to automate complex forensics and regulatory compliance.</p>
+      <sub><code>Gemini Vision</code> • <code>pgvector</code> • <code>Embeddings</code></sub>
+    </td>
+    <td width="33.3%" valign="top">
+      <h4>🏗️ Resilient Architecture</h4>
+      <p>Crafting high-performance, accessible, and strictly type-safe web systems designed for reliability, speed, and real user impact.</p>
+      <sub><code>Next.js 16</code> • <code>TypeScript</code> • <code>WCAG 2.1 AA</code></sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
