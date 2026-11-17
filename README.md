@@ -7,7 +7,7 @@
 
   <!-- 3D Minted Metallic Coin Badges -->
   <p align="center">
-    <a href="https://www.linkedin.com/in/ishan-gupta-976192419" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://x.com/itsishan14" target="_blank" title="Follow on X"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
+    <a href="https://www.linkedin.com/in/ishan14md" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://x.com/itsishan14" target="_blank" title="Follow on X"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
   </p>
 
   <!-- Live Verified Profile Metrics Badges -->
