@@ -10,29 +10,12 @@
     <a href="https://www.linkedin.com/in/ishan14md?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" title="Connect on LinkedIn"><img src="./assets/coin_linkedin.svg" width="52" height="52" alt="LinkedIn Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ishangupta1412?tab=repositories" title="Explore Verified Repositories"><img src="./assets/coin_github.svg" width="52" height="52" alt="GitHub Coin" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://x.com/itsishan14" target="_blank" title="Follow on X"><img src="./assets/coin_x.svg" width="52" height="52" alt="X Coin" /></a>
   </p>
 
-  <!-- GitHub Verified Achievements Showcase -->
-  <p align="center">
-    <a href="https://github.com/ishangupta1412?tab=achievements" target="_blank" title="Pull Shark: Merged PRs with high velocity">
-      <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" width="68" height="68" alt="Pull Shark Badge" />
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/ishangupta1412?tab=achievements" target="_blank" title="YOLO: Merged PR without review friction">
-      <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="68" height="68" alt="YOLO Badge" />
-    </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/ishangupta1412?tab=achievements" target="_blank" title="Quickdraw: Closed issues and PRs within minutes of opening">
-      <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="68" height="68" alt="Quickdraw Badge" />
-    </a>
-  </p>
-
   <!-- Live Verified Profile Metrics Badges -->
   <p align="center">
-    <a href="https://github.com/ishangupta1412?tab=achievements"><img alt="Achievements" src="https://img.shields.io/badge/Achievements-Pull%20Shark%20%7C%20YOLO%20%7C%20Quickdraw-f59e0b?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;
-    <a href="https://www.linkedin.com/in/ishan14md?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ishan%20Gupta-0077b5?style=flat-square&logo=linkedin&logoColor=white" /></a>&nbsp;
-    <a href="mailto:ishan14122007@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-ishan14122007%40gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white" /></a>&nbsp;
-    <a href="https://github.com/ishangupta1412?tab=repositories"><img alt="Public Repos" src="https://img.shields.io/badge/Public%20Repos-6-238636?style=flat-square&logo=github" /></a>&nbsp;
+    <img alt="Public Repos" src="https://img.shields.io/badge/Public%20Repos-6-238636?style=flat-square&logo=github" />&nbsp;
     <img alt="Total Stars" src="https://img.shields.io/badge/%E2%98%85%20Total%20Stars-7-38bdf8?style=flat-square" />&nbsp;
-    <img alt="3D Live Grid" src="https://img.shields.io/badge/3D%20Telemetry-Active-10b981?style=flat-square" />
+    <img alt="3D Live Grid" src="https://img.shields.io/badge/3D%20Telemetry-Active-10b981?style=flat-square" />&nbsp;
+    <img alt="Galaga Arena" src="https://img.shields.io/badge/Galaga%20Grid-Online-f59e0b?style=flat-square" />
   </p>
 
 </div>
